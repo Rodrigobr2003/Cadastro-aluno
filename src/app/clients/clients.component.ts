@@ -7,6 +7,6 @@ import { Student } from '../student';
   styleUrl: './clients.component.css'
 })
 export class ClientsComponent {
-  students: Student[] = [{id:1, nome:'Ronaldo Fenômeno', curso: "Copa de 2002"}]
+  students: Student[] = [{id:1, nome:'Ronaldo', sobrenome: "Fenômeno", curso: "Copa de 2002"}, {id:2, nome:'Freitas', sobrenome: "Cabo", curso: "Jiu-Jitsu"}]
 
 }
