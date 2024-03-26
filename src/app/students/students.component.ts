@@ -33,6 +33,8 @@ export class StudentsComponent implements OnInit {
   }
 
   save(){
-    this.students.push(this.formGroupStudent.value)
+    this.service.save(this.formGroupStudent.value).subscribe({
+      next: data => this.students.push(data)
+    })
   }
 }
