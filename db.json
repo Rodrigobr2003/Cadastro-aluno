@@ -1,34 +1,9 @@
 {
   "students": [
     {
-      "id": "1",
-      "nome": "Rod Maluco",
-      "curso": "ADS"
-    },
-    {
-      "id": "2",
-      "nome": "Advogado do Diabo",
-      "curso": "ADS"
-    },
-    {
-      "id": "3",
-      "nome": "Enzola Gasta Copas",
-      "curso": "ADS"
-    },
-    {
-      "id": "4",
-      "nome": "Paulo Maceiro",
-      "curso": "ADS"
-    },
-    {
-      "id": "5",
-      "nome": "Rafa Falastrão",
-      "curso": "ADS"
-    },
-    {
-      "id": "6",
-      "nome": "teste",
-      "curso": "bbb"
+      "id": 1,
+      "nome": "aa",
+      "curso": "nnn"
     }
   ]
 }
