@@ -48,6 +48,7 @@
                 <th scope="col">Matrícula</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Curso</th>
+                <th scope="col">Opções</th>
               </tr>
             </thead>
             <tbody>
@@ -55,6 +56,7 @@
                 <th ># {{student.id}}</th>
                 <td>{{student.nome}}</td>
                 <td>{{student.curso}}</td>
+                <td><button class="btn btn-warning ms-3">Alterar</button> <button (click)="remove(student)" class="btn btn-danger ms-3">Remover</button></td>
               </tr>
             </tbody>
           </table>

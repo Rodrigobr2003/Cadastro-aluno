@@ -37,4 +37,10 @@ export class StudentsComponent implements OnInit {
       next: data => this.students.push(data)
     })
   }
+
+  remove(student: Student){
+    this.service.delete(student).subscribe({
+      next: () => this.loadStudents()
+    })
+  }
 }

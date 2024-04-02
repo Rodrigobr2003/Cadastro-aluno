@@ -1,9 +1,3 @@
 {
-  "students": [
-    {
-      "id": 1,
-      "nome": "aa",
-      "curso": "nnn"
-    }
-  ]
+  "students": []
 }
