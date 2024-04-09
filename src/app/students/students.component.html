@@ -5,29 +5,36 @@
     <div class="col-7 m-auto">
       <h2 class="text-center">Cadastro de Aluno:</h2>
       <form [formGroup]="formGroupStudent">
-        
+
         <div class="mb-3">
           <label for="nome" class="form-label">Nome</label>
           <input
             type="text"
-            class="form-control"
+            class="form-control mb-2"
             id="nome"
             formControlName="nome"
           />
-          <div id="emailHelp" class="form-text">
-            Essa informação é confidencial.
-          </div>
+          <small *ngIf="submited && nome.hasError('minlength')" class="text-danger bg-danger-subtle p-1 rounded-2">
+            * O nome tem que ter no mínimo 3 caracteres
+          </small>
+
+          <small *ngIf="submited && nome.hasError('required')" class="text-danger bg-danger-subtle p-1 rounded-2">
+            * O nome é requerido
+          </small>
         </div>
         <div class="mb-3">
           <label for="curso" class="form-label">Curso</label>
           <input
             type="text"
-            class="form-control"
+            class="form-control mb-2"
             id="curso"
             formControlName="curso"
           />
+          <small *ngIf="submited && curso.hasError('required')" class="text-danger bg-danger-subtle p-1 rounded-2">
+            * O curso é requerido
+          </small>
         </div>
-        <button type="submit" (click)="save()" class="btn btn-primary">Salvar</button>
+        <button type="submit" (click)="save()" class="btn btn-primary mb-3">Salvar</button>
       </form>
 
     <div>
