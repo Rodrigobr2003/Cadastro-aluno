@@ -41,7 +41,7 @@ export class StudentsComponent implements OnInit {
           next: () => {
             this.loadStudents()
             this.isEditing = false
-            this.submited = false 
+            this.submited = false
           }
         })
       }else{
